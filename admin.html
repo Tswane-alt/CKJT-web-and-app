@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - CKJT Financial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin-styles.css">
+    
+</head>
+
+<body>
+    
+    <!-- ========================================
+         LOGIN SCREEN
+         ======================================== -->
+    <div id="login-screen" class="login-container">
+        <div class="login-box">
+            <h1>Admin Panel</h1>
+            <p>Enter password to access content editor</p>
+            
+            <form id="login-form">
+                <input 
+                    type="password" 
+                    id="password-input" 
+                    placeholder="Enter password"
+                    autocomplete="off"
+                >
+                <button type="submit">Login</button>
+                <p id="error-message" class="error-message"></p>
+            </form>
+            
+            <!--<div class="password-hint">
+                <p><strong>Default password:</strong> admin123</p>
+                <p class="small-text">(Change this in admin-script.js)</p>
+            </div>-->
+        </div>
+    </div>
+
+    
+    <!-- ========================================
+         ADMIN PANEL (Hidden until logged in)
+         ======================================== -->
+    <div id="admin-panel" class="admin-panel" style="display: none;">
+        
+        <!-- Header -->
+        <div class="admin-header">
+            <h1>Website Content Editor</h1>
+            <button id="logout-btn" class="logout-btn">Logout</button>
+        </div>
+        
+        <!-- Editor Container -->
+        <div class="editor-container">
+            
+            <!-- Navigation Section -->
+            <div class="editor-section">
+                <h2> Navigation & Branding</h2>
+                
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" id="edit-company-name" placeholder="CKJT Financial Services">
+                </div>
+                
+                <div class="form-group">
+                    <label>Tagline</label>
+                    <input type="text" id="edit-tagline" placeholder="Your Trusted Financial Partner">
+                </div>
+            </div>
+
+            
+            <!-- Hero Section -->
+            <div class="editor-section">
+                <h2> Hero Section </h2>
+                
+                <div class="form-group">
+                    <label>Hero Title</label>
+                    <input type="text" id="edit-hero-title" placeholder="Building Your Financial Future">
+                </div>
+                
+                <div class="form-group">
+                    <label>Hero Subtitle</label>
+                    <textarea id="edit-hero-subtitle" rows="3" placeholder="Expert guidance for wealth management..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Call-to-Action Button Text</label>
+                    <input type="text" id="edit-cta-button" placeholder="Get Started Today">
+                </div>
+            </div>
+
+            
+            <!-- Services Section -->
+            <div class="editor-section">
+                <h2> Services Section</h2>
+                
+                <div class="form-group">
+                    <label>Section Title</label>
+                    <input type="text" id="edit-services-title" placeholder="Our Services">
+                </div>
+                
+                <!-- Service 1 -->
+                <div class="service-editor">
+                    <h4>Service 1</h4>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" id="edit-service-1-title" placeholder="Wealth Management">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="edit-service-1-description" rows="3" placeholder="Comprehensive strategies to grow..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-editor">
+                    <h4>Service 2</h4>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" id="edit-service-2-title" placeholder="Retirement Planning">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="edit-service-2-description" rows="3" placeholder="Secure your future with..."></textarea>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-editor">
+                    <h4>Service 3</h4>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" id="edit-service-3-title" placeholder="Investment Advisory">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="edit-service-3-description" rows="3" placeholder="Expert investment guidance..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- About Section -->
+            <div class="editor-section">
+                <h2>About Section</h2>
+                
+                <div class="form-group">
+                    <label>Section Title</label>
+                    <input type="text" id="edit-about-title" placeholder="Why Choose CKJT?">
+                </div>
+                
+                <div class="form-group">
+                    <label>About Description</label>
+                    <textarea id="edit-about-description" rows="5" placeholder="With decades of experience..."></textarea>
+                </div>
+                
+                <div class="stats-editor">
+                    <h4>Statistics</h4>
+                    
+                    <div class="form-group">
+                        <label>Stat 1 Number</label>
+                        <input type="text" id="edit-stat-1-number" placeholder="25+">
+                    </div>
+                    <div class="form-group">
+                        <label>Stat 1 Label</label>
+                        <input type="text" id="edit-stat-1-label" placeholder="Years Experience">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Stat 2 Number</label>
+                        <input type="text" id="edit-stat-2-number" placeholder="5000+">
+                    </div>
+                    <div class="form-group">
+                        <label>Stat 2 Label</label>
+                        <input type="text" id="edit-stat-2-label" placeholder="Happy Clients">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Stat 3 Number</label>
+                        <input type="text" id="edit-stat-3-number" placeholder="$2B+">
+                    </div>
+                    <div class="form-group">
+                        <label>Stat 3 Label</label>
+                        <input type="text" id="edit-stat-3-label" placeholder="Assets Managed">
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Contact Section -->
+            <div class="editor-section">
+                <h2> Contact Information</h2>
+                
+                <div class="form-group">
+                    <label>Section Title</label>
+                    <input type="text" id="edit-contact-title" placeholder="Get In Touch">
+                </div>
+                
+                <div class="form-group">
+                    <label>Contact Description</label>
+                    <textarea id="edit-contact-description" rows="3" placeholder="Ready to start your financial journey?"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" id="edit-contact-phone" placeholder="+1 (555) 123-4567">
+                </div>
+                
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" id="edit-contact-email" placeholder="info@ckjtfinancial.com">
+                </div>
+                
+                <div class="form-group">
+                    <label>Physical Address</label>
+                    <textarea id="edit-contact-address" rows="2" placeholder="123 Financial Street, Suite 100..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Business Hours</label>
+                    <input type="text" id="edit-contact-hours" placeholder="Mon-Fri: 9:00 AM - 6:00 PM">
+                </div>
+            </div>
+
+            
+            <!-- Footer Section -->
+            <div class="editor-section">
+                <h2> Footer</h2>
+                
+                <div class="form-group">
+                    <label>Footer Text</label>
+                    <textarea id="edit-footer-text" rows="2" placeholder="© 2024 CKJT Financial Services..."></textarea>
+                </div>
+            </div>
+
+            
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button id="save-btn" class="save-btn"> Save All Changes</button>
+                <button id="preview-btn" class="preview-btn"> Preview Website</button>
+                <button id="reset-btn" class="reset-btn"> Reset to Defaults</button>
+            </div>
+            
+            <div id="save-message" class="save-message"></div>
+            
+        </div>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>

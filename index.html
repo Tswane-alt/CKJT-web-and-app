@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKJT Financial Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<body>
+    
+    <!-- ========================================
+         NAVIGATION BAR
+         ======================================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            
+            <!-- Logo -->
+            <div class="logo">
+                <img src="logo.png" alt="CKJT Financial Services" id="company-logo">
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            
+            <!-- Get Quote Button -->
+            <div class="nav-cta">
+                <a href="#contact" class="btn-quote" id="nav-cta-text">Get A Quote →</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">Building Your Financial Future</h1>
+            
+            <p class="hero-subtitle" id="hero-subtitle">
+                Expert guidance for wealth management, retirement planning, and investment strategies tailored to your goals
+            </p>
+            
+            <button class="btn-primary" id="hero-cta-text">Discover More →</button>
+        </div>
+    </section>
+
+    
+    <!-- ========================================
+         SERVICES SECTION
+         ======================================== -->
+    <section class="services" id="services">
+        <div class="services-container">
+            
+            <div class="services-grid">
+                
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 6h18M3 12h18M3 18h18"/>
+                            <rect x="2" y="3" width="20" height="5" rx="1"/>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="service-title" id="service-1-title">Financial & Risk Advisory</h3>
+                    
+                    <p class="service-description" id="service-1-description">
+                        Comprehensive risk management and financial advisory services to protect and grow your wealth
+                    </p>
+                    
+                    <a href="#" class="service-link">
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="service-title" id="service-2-title">Business Management Consulting</h3>
+                    
+                    <p class="service-description" id="service-2-description">
+                        Strategic business solutions to optimize operations and drive sustainable growth
+                    </p>
+                    
+                    <a href="#" class="service-link">
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 3v18M15 3v18"/>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="service-title" id="service-3-title">Accounting & Bookkeeping</h3>
+                    
+                    <p class="service-description" id="service-3-description">
+                        Accurate financial records and accounting services to keep your business compliant and informed
+                    </p>
+                    
+                    <a href="#" class="service-link">
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+                
+            </div>
+            
+            <!-- More Services Link -->
+            <div class="services-footer">
+                <a href="#services" class="more-services" id="more-services-text">
+                    Take a look at <strong>More Services</strong> →
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <!-- ========================================
+         ABOUT SECTION
+         ======================================== -->
+    <section class="about" id="about">
+        <div class="about-container">
+            
+            <h2 class="section-title" id="about-title">About CKJT </h2>
+            <h1 class="section-subtitle" id="about-subtitle">OUR BUSINESS IS TAKING CARE OF YOUR BUSINESS </h1>
+            
+            <p class="about-description" id="about-description">
+                We believe that life is a succession of lessons which must be lived to be understood, 
+                and that vision without execution is just hallucination.
+            </p>
+
+            <div class="tabs">
+               <button class="tab active" onclick="showTab('mission')">Our Mission</button>
+               <button class="tab" onclick="showTab('vision')">Our Vision</button>
+               <button class="tab" onclick="showTab('values')">Our Values</button>
+            </div>
+            
+            <div class="tab-content">
+                <p id="mission" class="content active">
+    We seek and strive to build a strong and durable client relationship by adhering to the 
+    highest ethical standards in the financial sector and always treating our clients with honesty and integrity.
+                </p>
+
+            <p id="vision" class="content">
+                Our vision is to become a trusted partner that empowers businesses to grow through strategic insight, innovation, and sustainable financial solutions.
+            </p>
+            
+            <p id="values" class="content">
+                 Integrity, transparency, accountability, and client-focused innovation guide every decision we make.
+            </p>
+        </div>
+            
+        </div>
+    </section>
+
+     
+    <!-- ========================================
+         CONTACT SECTION
+         ======================================== -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            
+            <h2 class="section-title" id="contact-title">Get In Touch</h2>
+            
+            <p class="contact-description" id="contact-description">
+                Ready to start your financial journey? Contact us today for a complimentary consultation.
+            </p>
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Phone:</strong> <span id="contact-phone">+1 123456789</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong> <span id="contact-email">info@ckjtfinancial.com</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Address:</strong> <span id="contact-address">21A President Paul Kruger Street, Polokwane, 0699</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Hours:</strong> <span id="contact-hours">Mon-Fri: 8:00 AM - 4:00 PM</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+   <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Footer Top -->
+            <div class="footer-top">
+                
+                <!-- Company Info -->
+                <div class="footer-column footer-about">
+                    <img src="logo.png" alt="CKJT Financial Services" class="footer-logo">
+                    <p class="footer-description" id="footer-description">
+                        We strive to deliver real value to our clients by providing the highest professional tax and financial services gearing our clients to achieve their goals.
+                    </p>
+                    
+                    <div class="social-share">
+                        <h4>Social Share:</h4>
+                        <div class="social-links">
+                            <a href="#" target="_blank" id="facebook-link"><i class="social-icon">f</i></a>
+                            <a href="#" target="_blank" id="twitter-link"><i class="social-icon">t</i></a>
+                            <a href="#" target="_blank" id="instagram-link"><i class="social-icon">i</i></a>
+                            <a href="#" target="_blank" id="youtube-link"><i class="social-icon">y</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Explore Menu -->
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#pricing" id="pricing-link">Pricing</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Call Us -->
+                <div class="footer-column footer-contact">
+                    <h3>Call Us On</h3>
+                    <a href="tel:0150071003" class="phone-number" id="footer-phone">015 007 1003</a>
+                    <div class="phone-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    Copyright © 2022 <span class="highlight">CKJT</span>. All Rights Reserved.
+                </p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#contact">Contact Us</a>
+                    <span class="separator">|</span>
+                    <a href="#services">Financial Services</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank" id="whatsapp-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

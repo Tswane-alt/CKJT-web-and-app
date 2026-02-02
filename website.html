@@ -31,12 +31,20 @@
     .smooth-scroll {
       scroll-behavior: smooth;
     }
-  </style>
-  <style>@view-transition { navigation: auto; }</style>
+  
+    @view-transition { navigation: auto; }
+    
+    </style>
+
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+
  </head>
  <body class="h-full smooth-scroll overflow-auto">
-  <div id="app-wrapper" class="w-full h-full"><!-- Navigation -->
+
+<!-- Navigation -->
+
+
+  <div id="app-wrapper" class="w-full h-full">
    <nav id="nav" class="w-full shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4">
      <div class="flex justify-between items-center">
@@ -52,18 +60,24 @@
       </div>
      </div>
     </div>
-   </nav><!-- Hero Section -->
-   <section id="hero" class="w-full py-20 px-6">
-    <div class="max-w-7xl mx-auto text-center">
-     <h2 id="hero-title" class="text-5xl md:text-6xl font-bold mb-6">Building Your Financial Future</h2>
-     <p id="hero-subtitle" class="text-xl md:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">Expert guidance for wealth management, retirement planning, and investment strategies tailored to your goals</p><button id="cta-button" class="px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">Get Started Today</button>
-    </div>
-   </section><!-- Services Section -->
-   <section id="services" class="w-full py-20 px-6">
-    <div class="max-w-7xl mx-auto">
-     <h2 id="services-title" class="text-4xl font-bold text-center mb-16">Our Services</h2>
-     <div class="grid md:grid-cols-3 gap-8"><!-- Service 1 -->
-      <div class="card-hover rounded-xl p-8 shadow-lg">
+
+
+<!-- Hero Section -->
+
+   </nav>
+      <section id="hero" class="w-full py-20 px-6">
+         <div class="max-w-7xl mx-auto text-center">
+           <h2 id="hero-title" class="text-5xl md:text-6xl font-bold mb-6">Building Your Financial Future</h2>
+           <p id="hero-subtitle" class="text-xl md:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">Expert guidance for wealth management, retirement planning, and investment strategies tailored to your goals</p><button id="cta-button" class="px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">Get Started Today</button>
+         </div>
+      </section>
+
+     <!-- Services Section -->
+       <section id="services" class="w-full py-20 px-6">
+           <div class="max-w-7xl mx-auto">
+               <h2 id="services-title" class="text-4xl font-bold text-center mb-16">Our Services</h2>
+                 <div class="grid md:grid-cols-3 gap-8"><!-- Service 1 -->
+                 <div class="card-hover rounded-xl p-8 shadow-lg">
        <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>

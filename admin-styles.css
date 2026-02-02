@@ -1,0 +1,390 @@
+/* ========================================
+   ADMIN PANEL STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: #bfd730;
+    --dark-bg: #1a1a1a;
+    --dark-nav: #2b2b2b;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --text-gray: #666666;
+}
+
+body {
+    font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   LOGIN SCREEN
+   ======================================== */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-nav) 100%);
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    width: 100%;
+}
+
+.login-box h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-bg);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-box > p {
+    color: var(--text-gray);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#password-input {
+    padding: 16px 20px;
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+#password-input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+}
+
+#login-form button {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: var(--primary-green);
+    color: var(--dark-bg);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #a8c225;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 14px;
+    text-align: center;
+    min-height: 20px;
+    font-weight: 600;
+}
+
+.password-hint {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f9ff;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-green);
+}
+
+.password-hint p {
+    font-size: 14px;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.password-hint .small-text {
+    font-size: 12px;
+    color: var(--text-gray);
+}
+
+
+/* ========================================
+   ADMIN PANEL
+   ======================================== */
+.admin-panel {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.admin-header {
+    background-color: var(--dark-nav);
+    color: var(--text-light);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.admin-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logout-btn {
+    padding: 12px 25px;
+    background-color: var(--primary-green);
+    color: var(--dark-bg);
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.logout-btn:hover {
+    background-color: #a8c225;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   EDITOR CONTAINER
+   ======================================== */
+.editor-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.editor-section {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid var(--primary-green);
+}
+
+.editor-section h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--dark-bg);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.editor-section h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: var(--primary-green);
+    color: var(--dark-bg);
+    border-radius: 6px;
+    display: inline-block;
+}
+
+
+/* ========================================
+   FORM ELEMENTS
+   ======================================== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="url"],
+.form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-green);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: var(--text-gray);
+}
+
+
+/* ========================================
+   SERVICE & STATS EDITORS
+   ======================================== */
+.service-editor,
+.stats-editor {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+}
+
+
+/* ========================================
+   ACTION BUTTONS
+   ======================================== */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.save-btn,
+.preview-btn,
+.reset-btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 18px 35px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-btn {
+    background-color: var(--primary-green);
+    color: var(--dark-bg);
+}
+
+.save-btn:hover {
+    background-color: #a8c225;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(191, 215, 48, 0.3);
+}
+
+.preview-btn {
+    background-color: var(--dark-nav);
+    color: var(--text-light);
+}
+
+.preview-btn:hover {
+    background-color: var(--dark-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.reset-btn {
+    background-color: #666666;
+    color: var(--text-light);
+}
+
+.reset-btn:hover {
+    background-color: #555555;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ========================================
+   SAVE MESSAGE
+   ======================================== */
+.save-message {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    display: none;
+}
+
+.save-message.success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 2px solid var(--primary-green);
+    display: block;
+}
+
+.save-message.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 2px solid #ef4444;
+    display: block;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+    .admin-header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .admin-header h1 {
+        font-size: 24px;
+    }
+    
+    .editor-container {
+        padding: 20px 15px;
+    }
+    
+    .editor-section {
+        padding: 25px 20px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .save-btn,
+    .preview-btn,
+    .reset-btn {
+        width: 100%;
+        min-width: 100%;
+    }
+}
