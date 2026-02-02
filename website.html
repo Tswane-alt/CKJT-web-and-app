@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CKJT Financial Services</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    }
+    
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full smooth-scroll overflow-auto">
+  <div id="app-wrapper" class="w-full h-full"><!-- Navigation -->
+   <nav id="nav" class="w-full shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+     <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+       <svg class="w-10 h-10" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#3b82f6" /> <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+       </svg>
+       <div>
+        <h1 id="company-name" class="text-xl font-bold">CKJT Financial Services</h1>
+        <p id="tagline" class="text-sm opacity-80">Your Trusted Financial Partner</p>
+       </div>
+      </div>
+      <div class="hidden md:flex space-x-8"><a href="#services" class="hover:opacity-80 transition-opacity">Services</a> <a href="#about" class="hover:opacity-80 transition-opacity">About</a> <a href="#contact" class="hover:opacity-80 transition-opacity">Contact</a>
+      </div>
+     </div>
+    </div>
+   </nav><!-- Hero Section -->
+   <section id="hero" class="w-full py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+     <h2 id="hero-title" class="text-5xl md:text-6xl font-bold mb-6">Building Your Financial Future</h2>
+     <p id="hero-subtitle" class="text-xl md:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">Expert guidance for wealth management, retirement planning, and investment strategies tailored to your goals</p><button id="cta-button" class="px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">Get Started Today</button>
+    </div>
+   </section><!-- Services Section -->
+   <section id="services" class="w-full py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+     <h2 id="services-title" class="text-4xl font-bold text-center mb-16">Our Services</h2>
+     <div class="grid md:grid-cols-3 gap-8"><!-- Service 1 -->
+      <div class="card-hover rounded-xl p-8 shadow-lg">
+       <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+       </div>
+       <h3 id="service-1-title" class="text-2xl font-semibold text-center mb-4">Wealth Management</h3>
+       <p id="service-1-description" class="text-center opacity-80">Comprehensive strategies to grow and protect your wealth across generations with personalized portfolio management</p>
+      </div><!-- Service 2 -->
+      <div class="card-hover rounded-xl p-8 shadow-lg">
+       <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+       </div>
+       <h3 id="service-2-title" class="text-2xl font-semibold text-center mb-4">Retirement Planning</h3>
+       <p id="service-2-description" class="text-center opacity-80">Secure your future with strategic retirement planning that ensures financial independence and peace of mind</p>
+      </div><!-- Service 3 -->
+      <div class="card-hover rounded-xl p-8 shadow-lg">
+       <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        </svg>
+       </div>
+       <h3 id="service-3-title" class="text-2xl font-semibold text-center mb-4">Investment Advisory</h3>
+       <p id="service-3-description" class="text-center opacity-80">Expert investment guidance backed by market research and decades of experience in financial markets</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="w-full py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 id="about-title" class="text-4xl font-bold mb-8">Why Choose CKJT?</h2>
+     <p id="about-description" class="text-xl opacity-90 leading-relaxed">With decades of experience in financial services, CKJT has helped thousands of clients achieve their financial goals. Our team of certified financial advisors brings expertise, integrity, and personalized attention to every client relationship. We believe in building long-term partnerships based on trust and proven results.</p>
+     <div class="grid md:grid-cols-3 gap-8 mt-12">
+      <div>
+       <div class="text-5xl font-bold mb-2">
+        25+
+       </div>
+       <div class="opacity-80">
+        Years Experience
+       </div>
+      </div>
+      <div>
+       <div class="text-5xl font-bold mb-2">
+        5000+
+       </div>
+       <div class="opacity-80">
+        Happy Clients
+       </div>
+      </div>
+      <div>
+       <div class="text-5xl font-bold mb-2">
+        $2B+
+       </div>
+       <div class="opacity-80">
+        Assets Managed
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="w-full py-20 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+     <h2 id="contact-title" class="text-4xl font-bold mb-6">Get In Touch</h2>
+     <p id="contact-description" class="text-xl mb-10 opacity-90">Ready to start your financial journey? Contact us today for a complimentary consultation with one of our expert advisors.</p>
+     <div class="flex flex-col sm:flex-row gap-4 justify-center"><button class="px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105">Schedule Consultation</button> <button class="px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-105">Call Us Now</button>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer id="footer" class="w-full py-8 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+     <p id="footer-text" class="opacity-80">© 2024 CKJT Financial Services. All rights reserved. Securities and advisory services offered through licensed professionals.</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      background_color: '#f8fafc',
+      nav_background: '#ffffff',
+      hero_background: '#1e3a8a',
+      hero_text_color: '#ffffff',
+      primary_action_color: '#3b82f6',
+      text_color: '#1e293b',
+      card_background: '#ffffff',
+      service_icon_background: '#dbeafe',
+      service_icon_color: '#3b82f6',
+      about_background: '#f1f5f9',
+      contact_background: '#ffffff',
+      footer_background: '#1e293b',
+      footer_text_color: '#e2e8f0',
+      font_family: 'Inter',
+      font_size: 16,
+      company_name: 'CKJT Financial Services',
+      tagline: 'Your Trusted Financial Partner',
+      hero_title: 'Building Your Financial Future',
+      hero_subtitle: 'Expert guidance for wealth management, retirement planning, and investment strategies tailored to your goals',
+      cta_button: 'Get Started Today',
+      services_title: 'Our Services',
+      service_1_title: 'Wealth Management',
+      service_1_description: 'Comprehensive strategies to grow and protect your wealth across generations with personalized portfolio management',
+      service_2_title: 'Retirement Planning',
+      service_2_description: 'Secure your future with strategic retirement planning that ensures financial independence and peace of mind',
+      service_3_title: 'Investment Advisory',
+      service_3_description: 'Expert investment guidance backed by market research and decades of experience in financial markets',
+      about_title: 'Why Choose CKJT?',
+      about_description: 'With decades of experience in financial services, CKJT has helped thousands of clients achieve their financial goals. Our team of certified financial advisors brings expertise, integrity, and personalized attention to every client relationship. We believe in building long-term partnerships based on trust and proven results.',
+      contact_title: 'Get In Touch',
+      contact_description: 'Ready to start your financial journey? Contact us today for a complimentary consultation with one of our expert advisors.',
+      footer_text: '© 2024 CKJT Financial Services. All rights reserved. Securities and advisory services offered through licensed professionals.'
+    };
+
+    async function onConfigChange(config) {
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseFontStack = '-apple-system, BlinkMacSystemFont, sans-serif';
+      const baseSize = config.font_size || defaultConfig.font_size;
+
+      // Apply background colors
+      document.getElementById('app-wrapper').style.backgroundColor = config.background_color || defaultConfig.background_color;
+      document.getElementById('nav').style.backgroundColor = config.nav_background || defaultConfig.nav_background;
+      document.getElementById('hero').style.background = `linear-gradient(135deg, ${config.hero_background || defaultConfig.hero_background} 0%, ${config.primary_action_color || defaultConfig.primary_action_color} 100%)`;
+      document.getElementById('about').style.backgroundColor = config.about_background || defaultConfig.about_background;
+      document.getElementById('services').style.backgroundColor = config.background_color || defaultConfig.background_color;
+      document.getElementById('contact').style.backgroundColor = config.contact_background || defaultConfig.contact_background;
+      document.getElementById('footer').style.backgroundColor = config.footer_background || defaultConfig.footer_background;
+
+      // Apply text colors
+      document.getElementById('nav').style.color = config.text_color || defaultConfig.text_color;
+      document.getElementById('hero').style.color = config.hero_text_color || defaultConfig.hero_text_color;
+      document.getElementById('services').style.color = config.text_color || defaultConfig.text_color;
+      document.getElementById('about').style.color = config.text_color || defaultConfig.text_color;
+      document.getElementById('contact').style.color = config.text_color || defaultConfig.text_color;
+      document.getElementById('footer').style.color = config.footer_text_color || defaultConfig.footer_text_color;
+
+      // Apply card backgrounds
+      document.querySelectorAll('.card-hover').forEach(card => {
+        card.style.backgroundColor = config.card_background || defaultConfig.card_background;
+      });
+
+      // Apply service icon styling
+      document.querySelectorAll('.card-hover > div:first-child').forEach(icon => {
+        icon.style.backgroundColor = config.service_icon_background || defaultConfig.service_icon_background;
+        icon.style.color = config.service_icon_color || defaultConfig.service_icon_color;
+      });
+
+      // Apply primary action button colors
+      const ctaButton = document.getElementById('cta-button');
+      ctaButton.style.backgroundColor = config.primary_action_color || defaultConfig.primary_action_color;
+      ctaButton.style.color = config.hero_text_color || defaultConfig.hero_text_color;
+
+      const contactButtons = document.querySelectorAll('#contact button');
+      contactButtons.forEach((btn, idx) => {
+        if (idx === 0) {
+          btn.style.backgroundColor = config.primary_action_color || defaultConfig.primary_action_color;
+          btn.style.color = config.hero_text_color || defaultConfig.hero_text_color;
+        } else {
+          btn.style.backgroundColor = config.card_background || defaultConfig.card_background;
+          btn.style.color = config.primary_action_color || defaultConfig.primary_action_color;
+          btn.style.border = `2px solid ${config.primary_action_color || defaultConfig.primary_action_color}`;
+        }
+      });
+
+      // Apply fonts and sizes
+      document.getElementById('company-name').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('company-name').style.fontSize = `${baseSize * 1.25}px`;
+      
+      document.getElementById('tagline').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('tagline').style.fontSize = `${baseSize * 0.875}px`;
+      
+      document.getElementById('hero-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('hero-title').style.fontSize = `${baseSize * 3}px`;
+      
+      document.getElementById('hero-subtitle').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('hero-subtitle').style.fontSize = `${baseSize * 1.25}px`;
+      
+      document.getElementById('services-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('services-title').style.fontSize = `${baseSize * 2}px`;
+      
+      document.getElementById('about-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('about-title').style.fontSize = `${baseSize * 2}px`;
+      
+      document.getElementById('contact-title').style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.getElementById('contact-title').style.fontSize = `${baseSize * 2}px`;
+
+      document.querySelectorAll('h3').forEach(h3 => {
+        h3.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        h3.style.fontSize = `${baseSize * 1.5}px`;
+      });
+
+      document.querySelectorAll('p').forEach(p => {
+        p.style.fontFamily = `${customFont}, ${baseFontStack}`;
+        p.style.fontSize = `${baseSize}px`;
+      });
+
+      // Apply text content
+      document.getElementById('company-name').textContent = config.company_name || defaultConfig.company_name;
+      document.getElementById('tagline').textContent = config.tagline || defaultConfig.tagline;
+      document.getElementById('hero-title').textContent = config.hero_title || defaultConfig.hero_title;
+      document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      document.getElementById('cta-button').textContent = config.cta_button || defaultConfig.cta_button;
+      document.getElementById('services-title').textContent = config.services_title || defaultConfig.services_title;
+      document.getElementById('service-1-title').textContent = config.service_1_title || defaultConfig.service_1_title;
+      document.getElementById('service-1-description').textContent = config.service_1_description || defaultConfig.service_1_description;
+      document.getElementById('service-2-title').textContent = config.service_2_title || defaultConfig.service_2_title;
+      document.getElementById('service-2-description').textContent = config.service_2_description || defaultConfig.service_2_description;
+      document.getElementById('service-3-title').textContent = config.service_3_title || defaultConfig.service_3_title;
+      document.getElementById('service-3-description').textContent = config.service_3_description || defaultConfig.service_3_description;
+      document.getElementById('about-title').textContent = config.about_title || defaultConfig.about_title;
+      document.getElementById('about-description').textContent = config.about_description || defaultConfig.about_description;
+      document.getElementById('contact-title').textContent = config.contact_title || defaultConfig.contact_title;
+      document.getElementById('contact-description').textContent = config.contact_description || defaultConfig.contact_description;
+      document.getElementById('footer-text').textContent = config.footer_text || defaultConfig.footer_text;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.card_background || defaultConfig.card_background,
+            set: (value) => {
+              config.card_background = value;
+              window.elementSdk.setConfig({ card_background: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              window.elementSdk.setConfig({ text_color: value });
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              window.elementSdk.setConfig({ primary_action_color: value });
+            }
+          },
+          {
+            get: () => config.hero_background || defaultConfig.hero_background,
+            set: (value) => {
+              config.hero_background = value;
+              window.elementSdk.setConfig({ hero_background: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            window.elementSdk.setConfig({ font_family: value });
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            window.elementSdk.setConfig({ font_size: value });
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['company_name', config.company_name || defaultConfig.company_name],
+        ['tagline', config.tagline || defaultConfig.tagline],
+        ['hero_title', config.hero_title || defaultConfig.hero_title],
+        ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
+        ['cta_button', config.cta_button || defaultConfig.cta_button],
+        ['services_title', config.services_title || defaultConfig.services_title],
+        ['service_1_title', config.service_1_title || defaultConfig.service_1_title],
+        ['service_1_description', config.service_1_description || defaultConfig.service_1_description],
+        ['service_2_title', config.service_2_title || defaultConfig.service_2_title],
+        ['service_2_description', config.service_2_description || defaultConfig.service_2_description],
+        ['service_3_title', config.service_3_title || defaultConfig.service_3_title],
+        ['service_3_description', config.service_3_description || defaultConfig.service_3_description],
+        ['about_title', config.about_title || defaultConfig.about_title],
+        ['about_description', config.about_description || defaultConfig.about_description],
+        ['contact_title', config.contact_title || defaultConfig.contact_title],
+        ['contact_description', config.contact_description || defaultConfig.contact_description],
+        ['footer_text', config.footer_text || defaultConfig.footer_text]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c5fb9bf151673f0',t:'MTc2OTc2MzA2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
