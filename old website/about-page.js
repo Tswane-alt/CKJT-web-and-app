@@ -4,7 +4,7 @@
 
 // Default content for About page
 const defaultAboutContent = {
-    topAddress: 'Address: 22b Wandrag Pier Kroger Street, Polokwane, 0699',
+    topAddress: 'Address: 21A President Paul Kruger Street, Polokwane, 0699',
     topEmail: 'info@ckjt.co.za',
     directorLabel: 'ABOUT CKJT',
     directorTitle: 'Meet The Director',

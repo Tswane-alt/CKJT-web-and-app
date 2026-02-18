@@ -22,6 +22,45 @@ body {
     color: var(--text-dark);
     background-color: #ffffff;
 }
+/* ========================================
+   TOP BAR
+   ======================================== */
+.top-bar {
+    background-color: var(--primary-green);
+    color: var(--dark-bg);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-bar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-bar-item .icon {
+    font-size: 16px;
+}
+
+.top-bar-item a {
+    color: var(--dark-bg);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.top-bar-item a:hover {
+    text-decoration: underline;
+}
+
 
 
 /* ========================================
