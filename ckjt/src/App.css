@@ -31,3 +31,38 @@
     transform: rotate(360deg);
   }
 }
+
+/* Elegant Font Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* All headings use elegant Playfair Display */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Stacking effect on scroll */
+.Website {
+  position: relative;
+}
+
+/* Make sections stack nicely */
+section {
+  position: relative;
+  z-index: 1;
+}

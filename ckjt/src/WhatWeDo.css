@@ -1,0 +1,352 @@
+.what-we-do-page {
+  padding-top: 70px;
+}
+
+.wwd-hero {
+  background: linear-gradient(135deg, #0B1F3F 0%, #1a2f4d 100%);
+  padding: 6rem 3rem;
+  text-align: center;
+  color: white;
+}
+
+.wwd-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.wwd-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.wwd-services {
+  padding: 6rem 3rem;
+  background: white;
+}
+
+.wwd-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wwd-services h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #0B1F3F;
+}
+
+.service-detail {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 3rem;
+  background: #f8f9fa;
+  border-radius: 16px;
+  border-left: 5px solid #7ED957;
+}
+
+.service-detail-icon {
+  width: 80px;
+  height: 80px;
+  background: #7ED957;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.service-detail-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0B1F3F;
+}
+
+.service-detail-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.service-detail-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-detail-content ul li {
+  padding: 0.6rem 0;
+  color: #333;
+  font-size: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.service-detail-content ul li:last-child {
+  border-bottom: none;
+}
+
+/* Pricing Section */
+.price-list {
+  padding: 6rem 3rem;
+  background: #f8f9fa;
+}
+
+.price-list h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #0B1F3F;
+}
+
+.pricing-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 4rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pricing-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid #e5e7eb;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured {
+  border-color: #7ED957;
+  box-shadow: 0 8px 25px rgba(126, 217, 87, 0.2);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7ED957;
+  color: #0B1F3F;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #0B1F3F;
+}
+
+.price {
+  margin-bottom: 2rem;
+}
+
+.price .currency {
+  font-size: 1.5rem;
+  color: #666;
+  vertical-align: top;
+}
+
+.price .amount {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0B1F3F;
+}
+
+.price .period {
+  font-size: 1rem;
+  color: #666;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 0.8rem 0;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pricing-btn {
+  display: block;
+  width: 100%;
+  background: #0B1F3F;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pricing-btn:hover {
+  background: #7ED957;
+  color: #0B1F3F;
+}
+
+.pricing-card.featured .pricing-btn {
+  background: #7ED957;
+  color: #0B1F3F;
+}
+
+.pricing-card.featured .pricing-btn:hover {
+  background: #6BC647;
+}
+
+.pricing-note {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 968px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Download Price List Section */
+.download-pricelist {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 20px;
+  margin-top: 4rem;
+  border: 3px dashed #7ED957;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-pricelist::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(126, 217, 87, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.download-pricelist h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0B1F3F;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.download-pricelist p {
+  color: #666;
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #7ED957 0%, #6BC647 100%);
+  color: #0B1F3F;
+  padding: 1.3rem 3.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 25px rgba(126, 217, 87, 0.35);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.download-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s;
+}
+
+.download-btn:hover::before {
+  left: 100%;
+}
+
+.download-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(126, 217, 87, 0.5);
+  background: linear-gradient(135deg, #6BC647 0%, #5AB537 100%);
+}
+
+.download-btn:active {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(126, 217, 87, 0.4);
+}
+
+.download-btn i {
+  font-size: 1.8rem;
+  transition: transform 0.4s ease;
+}
+
+.download-btn:hover i {
+  transform: translateY(3px);
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .download-pricelist {
+    padding: 3rem 1.5rem;
+  }
+  
+  .download-pricelist h3 {
+    font-size: 1.8rem;
+  }
+  
+  .download-btn {
+    padding: 1.1rem 2.5rem;
+    font-size: 1rem;
+  }
+}

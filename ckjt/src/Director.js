@@ -1,8 +1,14 @@
 import './Director.css';
 import DirectorPic from './Director.png';
+import { motion } from 'framer-motion';
 
 function Director() {
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
     <section className="director" id="about">
       <div className="director-container">
         
@@ -40,6 +46,7 @@ function Director() {
               <p>Happy Clients</p>
             </div>
           </div>
+          
         </div>
 
         <div className="director-image">
@@ -48,6 +55,7 @@ function Director() {
 
       </div>
     </section>
+    </motion.div>
   );
 }
 

@@ -1,0 +1,72 @@
+.certifications-section {
+  padding: 6rem 3rem;
+  background: white;
+}
+
+.cert-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.company-details h3 {
+  font-size: 2rem;
+  color: #7ED957;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.company-details p {
+  font-size: 1.1rem;
+  color: #0B1F3F;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.cert-label {
+  color: #7ED957;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cert-content h2 {
+  font-size: 3rem;
+  color: #0B1F3F;
+  font-weight: 800;
+  margin: 1rem 0 3rem;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.logos-grid img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.logos-grid img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 968px) {
+  .cert-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

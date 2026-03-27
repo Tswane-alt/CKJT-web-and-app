@@ -1,4 +1,6 @@
 import './Footer.css';
+import { Link } from 'react-router-dom';
+
 
 function Footer() {
   return (
@@ -12,10 +14,10 @@ function Footer() {
             businesses achieve financial success and compliance.
           </p>
           <div className="footer-social">
-            <a href="#"><i className='bx bxl-facebook'></i></a>
-            <a href="#"><i className='bx bxl-twitter'></i></a>
-            <a href="#"><i className='bx bxl-linkedin'></i></a>
-            <a href="#"><i className='bx bxl-instagram'></i></a>
+            <a href=""><i className='bx bxl-facebook'></i></a>
+            <a href="https://www.tiktok.com/@ckjt.financial.se"><i className='bx bxl-tiktok'></i></a>
+            <a href="https://www.linkedin.com/company/cktj-financial-services/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9snWaLgZSvKWFc0WNJL%2BJQ%3D%3D"><i className='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/ckjt.financialservices/?hl=en"><i className='bx bxl-instagram'></i></a>
           </div>
         </div>
 
@@ -34,10 +36,11 @@ function Footer() {
         <div className="footer-column">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+           
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/what-we-do">Services</Link></li>
+            <li><Link to="/director">About Us</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -46,15 +49,15 @@ function Footer() {
           <ul className="contact-list">
             <li>
               <i className='bx bx-phone'></i>
-              <span>+27 (0) 123 456 789</span>
+              <span>+27 15 007 1003</span>
             </li>
             <li>
               <i className='bx bx-envelope'></i>
-              <span>info@ckjtfinancial.co.za</span>
+              <span>Info@ckjt.co.za</span>
             </li>
             <li>
               <i className='bx bx-map'></i>
-              <span>Johannesburg, South Africa</span>
+              <span>21A President Paul Kruger Street, Polokwane, 0699, South Africa</span>
             </li>
           </ul>
         </div>

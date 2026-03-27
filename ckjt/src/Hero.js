@@ -1,7 +1,13 @@
 import './Hero.css';
+import { motion } from 'framer-motion';
 
 function Hero() {
   return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
     <section className="hero" id="home">
 
       {/* Background Image Overlay */}
@@ -9,9 +15,9 @@ function Hero() {
 
       {/* Content */}
       <div className="hero-content">
-        <h1>TAKING CARE OF <br /> YOUR BUSINESS</h1>
+        <h1>OUR BUSINESS IS TAKING CARE OF <br /> YOUR BUSINESS</h1>
         <p>We are committed to your success...Which is why all of our services cover the essentials you need to make your finances easy and effortless</p>
-        <a href="https://wa.me/1234567890" className="hero-btn">Get A Quote</a>
+        <a href="https://wa.me/+27150071003" className="hero-btn">Get A Quote</a>
 
         {/* Scroll indicator */}
         <div className="scroll-indicator">
@@ -23,6 +29,7 @@ function Hero() {
      
 
     </section>
+    </motion.div>
   );
 }
 

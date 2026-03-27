@@ -20,7 +20,7 @@ function Contact() {
               </div>
               <div className="method-details">
                 <h4>Email Us</h4>
-                <p>info@ckjtfinancial.co.za</p>
+                <p>Info@ckjt.co.za</p>
               </div>
             </div>
 
@@ -30,7 +30,7 @@ function Contact() {
               </div>
               <div className="method-details">
                 <h4>Call Us</h4>
-                <p>+27 12 345 6789</p>
+                <p>+27 15 007 1003</p>
               </div>
             </div>
 
@@ -40,15 +40,15 @@ function Contact() {
               </div>
               <div className="method-details">
                 <h4>Visit Us</h4>
-                <p>Johannesburg, South Africa</p>
+                <p>21A President Paul Kruger Street, Polokwane, 0699, South Africa</p>
               </div>
             </div>
           </div>
 
           <div className="social-links">
-            <a href="#" className="social-icon"><i className='bx bxl-linkedin'></i></a>
-            <a href="#" className="social-icon"><i className='bx bxl-twitter'></i></a>
-            <a href="#" className="social-icon"><i className='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/company/cktj-financial-services/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9snWaLgZSvKWFc0WNJL%2BJQ%3D%3D" className="social-icon"><i className='bx bxl-linkedin'></i></a>
+            <a href="https://www.tiktok.com/@ckjt.financial.se" className="social-icon"><i className='bx bxl-tiktok'></i></a>
+            <a href="https://www.instagram.com/ckjt.financialservices/?hl=en" className="social-icon"><i className='bx bxl-instagram'></i></a>
           </div>
         </div>
 
@@ -56,12 +56,12 @@ function Contact() {
           <form>
             <div className="form-group">
               <label>Your Name</label>
-              <input type="text" placeholder="John Doe" />
+              <input type="text" placeholder="James" />
             </div>
 
             <div className="form-group">
               <label>Email Address</label>
-              <input type="email" placeholder="john@company.com" />
+              <input type="email" placeholder="james@yourcompany.com" />
             </div>
 
             <div className="form-group">

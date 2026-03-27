@@ -18,6 +18,7 @@
 }
 
 .hero-content {
+  margin-top: 10%;
   position: relative;
   z-index: 1;
   color: white;

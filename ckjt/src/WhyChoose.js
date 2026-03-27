@@ -25,7 +25,9 @@ function WhyChoose() {
 
         <div className="mission-vision">
           <div className="mv-card">
-            <div className="mv-icon" style={{ background: '#7ED957' }}></div>
+            <div className="mv-icon" style={{ background: '#7ED957' }}>
+              <i className="bx bx-target-lock"></i> 
+            </div>
             <h3>Our Mission</h3>
             <p>
               To provide exceptional financial services that empower businesses to achieve their goals 
@@ -34,7 +36,10 @@ function WhyChoose() {
           </div>
 
           <div className="mv-card">
-            <div className="mv-icon" style={{ background: '#0B1F3F' }}></div>
+            
+            <div className="mv-icon" style={{ background: '#0B1F3F' }}>
+              <i className='bx bx-show'></i>
+            </div>
             <h3>Our Vision</h3>
             <p>
               To be the most trusted financial partner for businesses across South Africa, known for 
