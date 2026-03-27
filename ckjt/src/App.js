@@ -1,8 +1,14 @@
 import logo from './logo.png';
 import Hero from './Hero';
 import Services from './Services';
+import Director from './Director';       
+import WhyChoose from './WhyChoose';
+import CoreValues from './CoreValues';    
+import Contact from './Contact';          
+import Footer from './Footer';
 import './App.css';
 import './Nav.css';
+
 
 function App() {
   return (
@@ -30,10 +36,18 @@ function App() {
     </nav>
      <Hero />
      <Services />
+     <Director/>
+     <WhyChoose/>
+     <CoreValues/>
+     <Contact/>
+     <Footer/>
+
+     
  
       {/* WhatsApp Float - shows on all pages */}
       <a href="https://wa.me/1234567890" className="whatsapp-float">
-        <span></span> Talk with Us
+        <i class="bx bx-headphone-mic"  />
+        Talk with Us
       </a>
     </div>
   );

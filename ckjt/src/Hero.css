@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url('./Untitled\ design\ \(9\).png'); /* 👈 add your image to public folder */
+  background-image: url('./Untitled\ design\ \(9\).png'); 
   background-size: cover;
   background-position: center;
 }
@@ -97,4 +97,9 @@
 .whatsapp-float:hover {
   background: #7ED957;
   color: black;
+}
+
+.whatsapp-float i {
+  color: #97f54a;
+  font-size: 20px;
 }
