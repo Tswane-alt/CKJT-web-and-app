@@ -28,7 +28,7 @@ function Director() {
             Practitioner. She is highly qualified and experienced, having worked at a 
             number of private accounting firms providing services such as payroll 
             administration, tax compliance services, and accounting to individuals 
-            and corporations for over 10 years.
+            and corporations for over 11 years.
           </p>
 
           <p>

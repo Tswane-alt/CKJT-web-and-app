@@ -11,6 +11,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import { motion } from 'framer-motion';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useState } from 'react';
 import './App.css';
 import './Nav.css';
 
@@ -32,17 +33,25 @@ const stackUp = {
 
 // Navigation Bar Component
 function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
         <img src={logo} className="App-logo" alt="logo" />
       </Link>
 
-      <ul className="navbar-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/what-we-do">What We Do</Link></li>
-        <li><Link to="/director">About Us</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+       {/* Hamburger Button */}
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <i className={menuOpen ? 'bx bx-x' : 'bx bx-menu'}></i>
+      </div>
+
+      {/* Nav Links */}
+      <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
+        <li><Link to="/hero" onClick={() => setMenuOpen(false)}>Home</Link></li>
+        <li><Link to="/what-we-do" onClick={() => setMenuOpen(false)}>What We Do</Link></li>
+        <li><Link to="/director" onClick={() => setMenuOpen(false)}>About Us</Link></li>
+        <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
       </ul>
 
       <a href="https://wa.me/+27150071003" className="navbar-btn">
@@ -74,7 +83,7 @@ function App() {
         <Navbar />
         
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/hero" element={<HomePage />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/director" element={<Director />} />
           <Route path="/contact" element={<FindUs />} />
