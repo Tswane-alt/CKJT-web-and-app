@@ -17,13 +17,12 @@ function Certifications() {
           <h2>Registration</h2>
           
           <div className="logos-grid">
-            <img src="/logos/xero.png" alt="Xero" />
-            <img src="/logos/sait.png" alt="SAIT" />
-            <img src="/logos/sage.png" alt="Sage Pastel" />
-            <img src="/logos/saiba.png" alt="SAIBA" />
-            <img src="/logos/Sars.png" alt="SARS" />
-            <img src="/logos/ciba.png" alt= "SARS"/>
-            <img src="/logos/quickbooks.png" alt="QuickBooks" />
+            <img src="/logos/XERO LOGO.png" alt="Xero" />
+            <img src="/logos/SARS LOGO.png" alt="SARS" />
+            <img src="/logos/SAIT LOGO.png" alt="SAIT" />
+            <img src="/logos/Quickbooks-Logo.png" alt="Quickbooks" />
+            <img src="/logos/CIPC LOGO.png" alt="CIPC" />
+            <img src="/logos/CIBA LOGO.png" alt= "CIBA"/>
           </div>
         </div>
 

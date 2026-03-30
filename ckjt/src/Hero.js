@@ -15,9 +15,9 @@ function Hero() {
 
       {/* Content */}
       <div className="hero-content">
-        <h1>OUR BUSINESS IS TAKING CARE OF <br /> YOUR BUSINESS</h1>
+        <h1>OUR BUSINESS IS TAKING CARE OF YOUR BUSINESS</h1>
         <p>We are committed to your success...Which is why all of our services cover the essentials you need to make your finances easy and effortless</p>
-        <a href="https://wa.me/+27150071003" className="hero-btn">Get A Quote</a>
+        <a href="https://wa.me/+27660907191" className="hero-btn">Get A Quote</a>
 
         {/* Scroll indicator */}
         <div className="scroll-indicator">

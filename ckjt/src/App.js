@@ -54,7 +54,7 @@ function Navbar() {
         <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
       </ul>
 
-      <a href="https://wa.me/+27150071003" className="navbar-btn">
+      <a href="https://wa.me/+27660907191" className="navbar-btn">
         Get A Quote
       </a>
     </nav>
@@ -94,7 +94,7 @@ function App() {
         </motion.div>
 
         {/* WhatsApp Float */}
-        <a href="https://wa.me/+27150071003" className="whatsapp-float">
+        <a href="https://wa.me/+27660207191" className="whatsapp-float">
           <i className="bx bx-microphone"></i>
           Talk with Us
         </a>

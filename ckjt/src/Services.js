@@ -21,17 +21,9 @@ function Services() {
 
         <div className="service-card">
           <div className="service-icon">
-            <i className='bx bx-line-chart'></i>
-          </div>
-          <h3>Financial & Risk Advisory</h3>
-          <p>Strategic financial planning and risk management solutions that help you make informed decisions, mitigate potential risks, and achieve sustainable business growth.</p>
-        </div>
-
-        <div className="service-card">
-          <div className="service-icon">
             <i className='bx bx-briefcase-alt-2'></i>
           </div>
-          <h3>Business Management & Consulting</h3>
+          <h3>Business Management and Consulting</h3>
           <p>Expert business consulting services providing innovative strategies, problem-solving tools, and guidance tailored to help your business tackle complex situations and flourish.</p>
         </div>
 
@@ -42,6 +34,18 @@ function Services() {
           <h3>Accounting and Bookkeeping</h3>
           <p>Professional accounting and bookkeeping services including payroll administration, financial reporting, and comprehensive record-keeping to maintain your company compliance status.</p>
         </div>
+
+
+        <div className="service-card">
+          <div className="service-icon">
+            <i className='bx bx-line-chart'></i>
+          </div>
+          <h3>Financial and Risk Advisory</h3>
+          <p>Strategic financial planning and risk management solutions that help you make informed decisions, mitigate potential risks, and achieve sustainable business growth.</p>
+        </div>
+
+        
+      
 
         <div className="service-card">
           <div className="service-icon">

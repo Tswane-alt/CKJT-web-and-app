@@ -30,7 +30,7 @@ function Contact() {
               </div>
               <div className="method-details">
                 <h4>Call Us</h4>
-                <p>+27 15 007 1003</p>
+                <p>+27 87 378 4912</p>
               </div>
             </div>
 

@@ -41,7 +41,7 @@ function Contact() {
                 <i className='bx bx-phone-call'></i>
               </div>
               <div className="contact-detail-content">
-                <h4>Call Us: <span className="highlight">015 007 1003</span></h4>
+                <h4>Call Us: <span className="highlight">+27 87 378 4912</span></h4>
                 <p>Operating Hours: 08:00 to 16:30 on Mon-Thu</p>
                 <p>Operating Hours: 08:00 to 16:00 on Friday</p>
               </div>

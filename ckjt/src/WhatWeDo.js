@@ -98,20 +98,20 @@ function WhatWeDo() {
             viewport={{ once: false, amount: 0.3 }}
           >
             <div className="service-icon">
-            <i className='bx bx-line-chart'></i>
+            <i className='bx bx-book-content'></i>
           </div>
             <div className="service-detail-content">
-              <h3>Financial & Risk Advisory</h3>
+              <h3>Accounting and Bookkeeping</h3>
               <p>
-                Strategic financial planning and risk management solutions that help you make 
-                informed decisions, mitigate potential risks, and achieve sustainable business growth.
+                Accurate, timely financial records and comprehensive accounting services to keep your 
+                business compliant and provide clear insights into your financial position.
               </p>
               <ul>
-                <li>Financial Planning & Analysis</li>
-                <li>Risk Assessment & Management</li>
-                <li>Investment Advisory</li>
-                <li>Cash Flow Management</li>
-                <li>Business Valuation</li>
+                <li>Monthly Bookkeeping</li>
+                <li>Financial Statements Preparation</li>
+                <li>Accounts Payable & Receivable</li>
+                <li>Bank Reconciliations</li>
+                <li>Payroll Processing</li>
               </ul>
             </div>
           </motion.div>
@@ -127,7 +127,7 @@ function WhatWeDo() {
             <i className='bx bx-briefcase-alt-2'></i>
           </div>
             <div className="service-detail-content">
-              <h3>Business Management & Consulting</h3>
+              <h3>Business Management and Consulting</h3>
               <p>
                 Expert business consulting services providing innovative strategies, problem-solving tools, 
                 and guidance tailored to help your business tackle complex situations and flourish.
@@ -150,23 +150,27 @@ function WhatWeDo() {
             viewport={{ once: false, amount: 0.3 }}
           >
             <div className="service-icon">
-            <i className='bx bx-book-content'></i>
+            <i className='bx bx-line-chart'></i>
           </div>
             <div className="service-detail-content">
-              <h3>Accounting & Bookkeeping</h3>
+              <h3>Financial and Risk Advisory</h3>
               <p>
-                Accurate, timely financial records and comprehensive accounting services to keep your 
-                business compliant and provide clear insights into your financial position.
+                Strategic financial planning and risk management solutions that help you make 
+                informed decisions, mitigate potential risks, and achieve sustainable business growth.
               </p>
               <ul>
-                <li>Monthly Bookkeeping</li>
-                <li>Financial Statements Preparation</li>
-                <li>Accounts Payable & Receivable</li>
-                <li>Bank Reconciliations</li>
-                <li>Payroll Processing</li>
+                <li>Financial Planning & Analysis</li>
+                <li>Risk Assessment & Management</li>
+                <li>Investment Advisory</li>
+                <li>Cash Flow Management</li>
+                <li>Business Valuation</li>
               </ul>
             </div>
           </motion.div>
+
+          
+
+          
 
           <motion.div 
             className="service-detail"
@@ -203,7 +207,7 @@ function WhatWeDo() {
         {...fadeUp}
       >
         <div className="wwd-container">
-          <h2>Our Pricing</h2>
+          <h2>Our Pricing </h2>
           <p className="pricing-subtitle">Transparent, competitive pricing tailored to your needs</p>
 
           <motion.div 
@@ -218,7 +222,8 @@ function WhatWeDo() {
               className="pricing-card"
               variants={cardVariant}
             >
-              <h3>Starter</h3>
+              <h3>Starter </h3>
+              <p>from</p>
               <div className="price">
                 <span className="currency">R</span>
                 <span className="amount">2,500</span>
@@ -239,6 +244,7 @@ function WhatWeDo() {
             >
               <div className="popular-badge">Most Popular</div>
               <h3>Professional</h3>
+              <p>from</p>
               <div className="price">
                 <span className="currency">R</span>
                 <span className="amount">5,500</span>
@@ -259,6 +265,7 @@ function WhatWeDo() {
               variants={cardVariant}
             >
               <h3>Enterprise</h3>
+              
               <div className="price">
                 <span className="currency">R</span>
                 <span className="amount">Custom</span>
@@ -290,7 +297,7 @@ function WhatWeDo() {
           >
             <h3>Need a detailed breakdown?</h3>
             <p>Download our comprehensive price list for all services</p>
-            <a href="/pricelist.pdf" download className="download-btn">
+            <a href="/CKJT FINANCIAL SERVICES UPDATED PRICELIST.pdf" download className="download-btn">
               <i className='bx bx-download'></i>
               Download Price List (PDF)
             </a>

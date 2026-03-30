@@ -49,7 +49,7 @@ function Footer() {
           <ul className="contact-list">
             <li>
               <i className='bx bx-phone'></i>
-              <span>+27 15 007 1003</span>
+              <span>+27 87 378 4912</span>
             </li>
             <li>
               <i className='bx bx-envelope'></i>
